@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Dorm</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="utf-8">
+        <title>The Dorm</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="bootstrap.css">
+        <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="styles.css">
+      </head>
+      <body>
+
+        <section>
+          <nav class="navbar nav-buttons" id="nav-buttons">
+            <button class="sign-up" data-toggle="modal" data-target="#sign-upModal">Sign Up</button>
+            <button class="login" data-toggle="modal" data-target="#loginModal">Login</button>
+          </nav>
+        </section>
+
+        <section>
+          <div class="main-header">
+            <h1 id="header-text" class="animated fadeInDown">Texbook Market</h1>
+          </div>
+        </section>
+
+        <section>
+          <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Forums</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Chatrooms</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Events</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0 search">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn my-2 my-sm-0" id="search-btn" type="submit"><ion-icon name="search"></ion-icon></button>
+              </form>
+            </div>
+          </nav>
+        </section>
+
+
+        <section>
+          <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="m-3">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Username or Email</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                    </form>
+
+                    <div class="form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn real-sign-up" data-dismiss="modal">Login</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="modal fade" id="sign-upModal" tabindex="-1" role="dialog" aria-labelledby="sign-upModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="sign-upModalLabel">Sign Up</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="m-3">
+                    <form>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Username</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Username">
+                        <small id="help" class="form-text">Must be at least 3 characters long.</small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+                        <small id="help" class="form-text text-muted"></small>
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn real-sign-up" data-dismiss="modal">Sign Up</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="container mt-3">
+            <div class="col col-lg-12">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <h4 class="text-big">Textbook Market</h4>
+                </div>
+                <div class="card-body topics">
+                  <div class="">
+                    <div class="">
+                      <p>Hey, this is where we're selling and buying books. Please read the rules:</p>
+                      <ul>
+                        <li>No scamming.</li>
+                        <li>No overpriced stuff. Please be wary we are taking this very seriously.</li>
+                        <li>Get verified before using this market.</li>
+                      </ul>
+                    </div>
+                    <form class="form-inline my-2 my-lg-0 search float-right">
+                      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn my-2 my-sm-0" id="search-btn" type="submit"><ion-icon name="search"></ion-icon></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+        <section>
+          <div class="container mt-3">
+            <div class="col col-lg-12">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <h4 class="text-big">HOT ITEMS!</h4>
+                </div>
+                <div class="card-body topic" id="announcement">
+                  <div class="row hot-items">
+                    <div class="card mb-3 hot-item">
+                      <div class="card-header">
+                        <h5><a href="#">NEW!!! UNUSED!!! CHEAP!!</a></h5>
+                      </div>
+                      <div class="card-body">
+                        <img class="card-img-top book-pic" src="https://images-na.ssl-images-amazon.com/images/I/41FG6sD4ovL._SX406_BO1,204,203,200_.jpg" alt="">
+                      </div>
+                      <div class="card-footer">
+                        <a href="#">More</a>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 hot-item">
+                      <div class="card-header">
+                        <h5><a href="#">NEW!!! UNUSED!!! CHEAP!!</a></h5>
+                      </div>
+                      <div class="card-body">
+                        <img class="card-img-top book-pic" src="https://images-na.ssl-images-amazon.com/images/I/41FG6sD4ovL._SX406_BO1,204,203,200_.jpg" alt="">
+                      </div>
+                      <div class="card-footer">
+                        <a href="#">More</a>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 hot-item">
+                      <div class="card-header">
+                        <h5><a href="#">NEW!!! UNUSED!!! CHEAP!!</a></h5>
+                      </div>
+                      <div class="card-body">
+                        <img class="card-img-top book-pic" src="https://images-na.ssl-images-amazon.com/images/I/41FG6sD4ovL._SX406_BO1,204,203,200_.jpg" alt="">
+                      </div>
+                      <div class="card-footer">
+                        <a href="#">More</a>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 hot-item">
+                      <div class="card-header">
+                        <h5><a href="#">NEW!!! UNUSED!!! CHEAP!!</a></h5>
+                      </div>
+                      <div class="card-body">
+                        <img class="card-img-top book-pic" src="https://images-na.ssl-images-amazon.com/images/I/41FG6sD4ovL._SX406_BO1,204,203,200_.jpg" alt="">
+                      </div>
+                      <div class="card-footer">
+                        <a href="#">More</a>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 hot-item">
+                      <div class="card-header">
+                        <h5><a href="#">NEW!!! UNUSED!!! CHEAP!!</a></h5>
+                      </div>
+                      <div class="card-body">
+                        <img class="card-img-top book-pic" src="https://images-na.ssl-images-amazon.com/images/I/41FG6sD4ovL._SX406_BO1,204,203,200_.jpg" alt="">
+                      </div>
+                      <div class="card-footer">
+                        <a href="#">More</a>
+                      </div>
+                    </div>
+
+                    <div class="card mb-3 hot-item">
+                      <div class="card-header">
+                        <h5><a href="#">NEW!!! UNUSED!!! CHEAP!!</a></h5>
+                      </div>
+                      <div class="card-body">
+                        <img class="card-img-top book-pic" src="https://images-na.ssl-images-amazon.com/images/I/41FG6sD4ovL._SX406_BO1,204,203,200_.jpg" alt="">
+                      </div>
+                      <div class="card-footer">
+                        <a href="#">More</a>
+                      </div>
+                    </div>
+
+                    <div class="card hot-item">
+                      <div class="card-header">
+                        <h5><a href="#">NEW!!! UNUSED!!! CHEAP!!</a></h5>
+                      </div>
+                      <div class="card-body">
+                        <img class="card-img-top book-pic" src="https://images-na.ssl-images-amazon.com/images/I/41FG6sD4ovL._SX406_BO1,204,203,200_.jpg" alt="">
+                      </div>
+                      <div class="card-footer">
+                        <a href="#">More</a>
+                      </div>
+                    </div>
+
+                    <div class="card hot-item">
+                      <div class="card-header">
+                        <h5><a href="#">NEW!!! UNUSED!!! CHEAP!!</a></h5>
+                      </div>
+                      <div class="card-body">
+                        <img class="card-img-top book-pic" src="https://images-na.ssl-images-amazon.com/images/I/41FG6sD4ovL._SX406_BO1,204,203,200_.jpg" alt="">
+                      </div>
+                      <div class="card-footer">
+                        <a href="#">More</a>
+                      </div>
+                    </div>
+
+                    <div class="card hot-item">
+                      <div class="card-header">
+                        <h5><a href="#">NEW!!! UNUSED!!! CHEAP!!</a></h5>
+                      </div>
+                      <div class="card-body">
+                        <img class="card-img-top book-pic" src="https://images-na.ssl-images-amazon.com/images/I/41FG6sD4ovL._SX406_BO1,204,203,200_.jpg" alt="">
+                      </div>
+                      <div class="card-footer">
+                        <a href="#">More</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="footer">
+            <div class="container">
+              <div class="footer-cta">
+                <h3>The Dorm</h3>
+              </div>
+              <div class="footer-links">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">About Us</a></li>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-copyright">
+            <div class="container row">
+              <div>© 2019 Copyright by The Dorm</div>
+            </div>
+          </div>
+        </section>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/vue"></script>
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+      <script src="script.js"></script>
+      </body>
+    </html>
